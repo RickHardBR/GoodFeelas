@@ -3,7 +3,8 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>burger html5 landing page</title>
+        <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+        <title>GoodFellas Hamburgueria</title>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Stylesheets -->
@@ -20,14 +21,13 @@
 
         <!-- Custom stylesheet -->
         <link rel="stylesheet" href="css/custom.css" />
-        <!--[if lt IE 9]>
-                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        
+      
     </head>
     <body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
 
         <!-- Preloader --> 
-        <div id="loading">
+        <!-- <div id="loading">
             <div id="loading-center">
                 <div id="loading-center-absolute">
                     <div class="object" id="object_one"></div>
@@ -41,7 +41,7 @@
                     <div class="object" id="object_big"></div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--End Preloader -->
         <!-- Navbar -->
         <nav class="navbar navbar-default bootsnav no-background navbar-fixed black">
@@ -68,10 +68,10 @@
                 <div class="widget">
                     <h6 class="title">Menu</h6>
                     <ul class="link">
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#lanches">Lanches</a></li>
                         <!-- <li><a href="#">Serviços</a></li> -->
                         <!-- <li><a href="#">Blog</a></li> -->
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
                         <li><a href="#contatos">Contatos</a></li>
                     </ul>
                 </div>
@@ -115,7 +115,7 @@
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="feature">
-                            <div class="shack_burger">
+                            <div id="lanches" class="shack_burger">
                                 <div class="chicken">
                                     <img src="images/logo-chicken.png" alt="Chicken" />
                                 </div>
@@ -123,7 +123,7 @@
                                 <h2>Gallo</h2>
                                 <p>Burger de Frango 130gr, mussarela, cream cheese, geléia de maracujá com pimenta, bacon e salada.</p>
                             </div>
-                            <p class="caption">*Somente por Tempo Limitado</p>
+                            <!-- <p class="caption">*Somente por Tempo Limitado</p> -->
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -171,17 +171,23 @@
 
                                 <ul class="list-unstyled nutrition">
                                     <li class="icon">
-                                        <p>
-                                            <img src="../images/vegan.png" alt="simbolo vegano"/> Burger Vegano 130gr
-                                        </p>
+                                            <img src="images/vegan.png" alt="simbolo vegano"/> Burger Vegano 130gr
                                     </li>
-                                    <li class="icon"><p><img src="../images/creamcheese.png" alt="simbolo de creamcheese"/> Cream Cheese</p></a></li>
-                                    <li class="icon"><p><img src="../images/mussarela.png" alt="simbolo de mussarela"/> Mussarela</p></a></li>
-                                    <li class="icon"><p><img src="../images/salada.png" alt="simbolo de salada"/> Salada</p></a></li>
-                                    <li class="icon"><p><img src="../images/onion-ring.png" alt="simbolo de cebola"/> Cebola Crispy</p></a></li>
+                                    <li class="icon">
+                                            <img src="images/creamcheese.png" alt="simbolo de creamcheese"/> Cream Cheese
+                                </li>
+                                    <li class="icon">
+                                            <img src="images/mussarela.png" alt="simbolo de mussarela"/> Mussarela
+                                    </li>
+                                    <li class="icon">
+                                            <img src="images/salada.png" alt="simbolo de salada"/> Salada
+                                    </li>
+                                    <li class="icon">
+                                            <img src="images/onion-ring.png" alt="simbolo de cebola"/> Cebola Crispy
+                                    </li>
                                 </ul>
                                 <div class="info_btn_shadow">
-                                    <p href="" class="info_btn">Burger Vegano</p>
+                                    <a href="" class="info_btn">Burger Vegano</a>
                                 </div>
                             </div>
 
@@ -270,7 +276,7 @@
                 </div><!-- Carousel end-->
 
                 <!-- Forth section -->
-                <div class="row forth_sec">
+                <div id="cardapio" class="row forth_sec">
                     <div class="col-sm-4">
                         <div class="menu">
                             <a href="https://drive.google.com/file/d/1E6W1aoXnk3UUrfZ_MXD-6NAZqT-13C2t/view" target="_blank">
@@ -324,43 +330,42 @@
         <footer>
             <!-- Container -->
             <div class="container">
-                <div class="row">
+            <div class="row-contact">
+            <div class="form-container">
+            <form class="style-form">
+            <h3>Entre em contato, com sugestões, críticas ou elogíos</h3>
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="visitedName">
 
-                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
-                        <div class="subscribe">
-                            <h4>Inscreva-se agora</h4>
-                            <p>Assine a newsletter e receba algumas coisas crocantes toda semana.</p>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="visitedEmail">
 
-                            <form role="form">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" id="em" placeholder="Enter com seu e-mail aqui">
-                                        <span class="input-group-btn">
-                                            <button type="submit" class="btn send_btn">
-                                                <i class="glyphicon glyphicon-send"></i>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </form>
+            <label for="level">telefone com (dd)</label>
+            <input type="tel" name="telephone" id="visitedTelephone" onkeyup="handlePhone(event)"  maxlength="15">
 
-                        </div>
-                    </div>
+            <label for="character">Mensagem</label>
+            <textarea name="message" cols="30" rows="5" id="visitedMessage"></textarea>
+        
+            <button type="button" id="btnToSend">Enviar</button>
+        </form>
+        </div>
+ 
+<!-- ------------------------------------ -->
 
-                    <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
                         <div id="contatos" class="contact_us">
-                            <h4 class="contact-footer">Contate-nos</h4>
-                            <a href="">asrm.225@gmail.com</a>
+                            <h4 class="contact-footer">Venha nos visitar</h4>
+                            <a href="https://goo.gl/maps/XMYje3SRfBc8v3Ws9" frameborder="0"
+                            allowfullscreen target="_blank">Hamburgueria GoodFellas<br>Pizzaria Parió</a>
 
                             <address>
                                 Rua Dr. Simões de Almeida, 229<br />
-                                37.660-000 - Paraisópolis, MG <br />
-                                Brasil <br />
+                                37.660-000 - Paraisópolis, MG<br />
+                                (35) 3651-1141<br />
                             </address>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 col-sm-4 col-xs-12 pull-right">
+
+
                         <div class="basic_info">
                             <a href=""><img class="footer_logo" src="images/footer_logo.png" alt="Burger" /></a>
 
@@ -380,7 +385,7 @@
                                 </p>
                             </div>					
                         </div>
-                    </div>
+
 
                 </div>
             </div><!-- Container end -->
@@ -402,7 +407,9 @@
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="js/gmaps.min.js"></script>
 
-        <!--main js-->
+        <!--mains js-->
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="module" src="./js/data/main_firebase.js"></script>
+        <!-- <script type="text/javascript" src="js/data/email.js"></script> -->
     </body>	
 </html>	
